@@ -50,20 +50,3 @@ typedef enum {
     
 
 #endif /* OPS_H_ */
-
-/*
-
-Invalid reply op
-Errore non corrispondente 255
-make: *** [test4] Errore 1
-saipo@OEM2:~/Scaricati/MEMBOX$ CLIENT: 10855 manda :8 0 1024 
-CLIENT: 10853 manda :2 0 1024 
-Successo!
-Successo!
-CLIENT: 10853 manda :0 2 0 (null)
-CLIENT: 10855 manda :6 2 0 (null)
-Successo!
-Successo!
-CLIENT: 10855 manda :7 2 0 (null)
-CLIENT: 10853 manda :1 2 0 (null)
-*/
