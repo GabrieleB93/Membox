@@ -1,0 +1,20 @@
+NAME
+	script - Stampa a schermo opportune informazioni riguardanti le Statistiche di Membox
+
+SINOSSI
+	script [-p] [-u] [-g] [-r] [-c] [-s] [-o] [-m] NomeFileStatistiche
+		
+
+OPZIONI
+
+none Stampo i valori dell'ultimo TimeStamp
+-p Stampa i valori riguardanti le Put e le Put Fallite
+-u Stampa i valori riguardanti le Update e le Update Fallite
+-g Stampa i valori riguardanti le Get e le Get Fallite
+-r Stampa i valori riguardanti le Remove e le Remove Fallite
+-c Stampa i valori riguardanti il numero di connessioni
+-s Stampa i valori riguardanti la Size in KB
+-o Stampa i valori riguardanti il numero di oggetti nella Repository
+-m Stampa i valori riguardanti : Il massimo numero di connessioni raggiunte,il massimo numero di oggetti memorizzati e la massima size in KB raggiunta
+--help Stampa un messaggio di uso dello script
+
