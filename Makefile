@@ -1,32 +1,3 @@
-#
-# membox Progetto del corso di LSO 2016 
-# 
-# Dipartimento di Informatica Università di Pisa
-# Docenti: Pelagatti, Torquati
-#
-#
-
-##########################################################
-# IMPORTANTE: completare la lista dei file da consegnare
-# 
-FILE_DA_CONSEGNARE=membox.c message.h ops.h stats.h connections.h connections.c relazione.pdf operation.c operation.h queue.h queue.c icl_hash.c icl_hash.h erch.h script.sh HowToUse.txt Makefile
-# inserire il nome del tarball: es. NinoBixioGiuseppeGaribaldi
-TARNAME=GabrieleBarrecaLucaMurgia
-#
-###########################################################
-
-###################################################################
-# NOTA: Il nome riportato in UNIX_PATH deve corrispondere al nome 
-#       usato per l'opzione UnixPath nel file di configurazione del 
-#       server mbox (vedere i file nella directory DATA).
-#       Lo stesso vale per il nome riportato in STAT_PATH che deve 
-#       corrispondere con l'opzione StatFileName.
-#
-# ATTENZIONE: se il codice viene sviluppato sulle macchine del 
-#             laboratorio utilizzare come nomi, nomi unici, 
-#             ad esempo /tmp/mbox_sock_<numero-di-matricola> e
-#             /tmp/mbox_stats_<numero-di-matricola>.
-#
 ###################################################################
 UNIX_PATH       = /tmp/mbox_socket
 STAT_PATH       = /tmp/mbox_stats.txt
@@ -164,9 +135,7 @@ test7:
 	killall -USR2 -w membox
 	@echo "********** Test7 superato!"
 
-SUBJECTA="lso16: frammento 2 - corso A"
-SUBJECTB="lso16: frammento 2 - corso B"
-# target per la consegna
+
 consegna:
 	make test1
 	sleep 3
@@ -182,9 +151,3 @@ consegna:
 	sleep 3
 	make test7
 	sleep 3
-	./gruppo-check.pl < gruppo.txt
-	tar -cvf $(TARNAME)-membox.tar ./gruppo.txt ./Makefile $(FILE_DA_CONSEGNARE) 
-	@echo "*** FRAMMENTO: TAR PRONTO $(TARNAME)-membox.tar "
-	@echo "inviare come allegato a lso.di@listgateway.unipi.it con subject:"
-	@echo "$(SUBJECTA) oppure"
-	@echo "$(SUBJECTB)"
